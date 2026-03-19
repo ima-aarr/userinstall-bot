@@ -4,7 +4,7 @@ const { REST, Routes, ApplicationCommandOptionType } = require('discord.js');
 const commands = [
     {
         name: 'button',
-        description: 'メッセージを6回送信するボタンを出します',
+        description: 'メッセージ送信',
         contexts: [0, 1, 2],
         integration_types: [0, 1],
         options: [
@@ -12,7 +12,7 @@ const commands = [
                 name: 'message',
                 description: '送信するメッセージ（\\n と入力すると改行されます）',
                 type: ApplicationCommandOptionType.String,
-                required: true // 必ず入力させる
+                required: true 
             },
             {
                 name: 'random_mention',
@@ -24,14 +24,13 @@ const commands = [
     },
     {
         name: 'poll',
-        description: '固定の投票を作成します（自動でランダム絵文字が追加されます）',
+        description: '投票を作成します',
         contexts: [0, 1, 2],
         integration_types: [0, 1]
-        // 選択肢などはコード内で固定するため、ここは空になります
     },
     {
         name: 'ping',
-        description: 'Botの応答速度（Ping）を確認します',
+        description: 'Botの応答速度を確認します',
         contexts: [0, 1, 2],
         integration_types: [0, 1]
     }
