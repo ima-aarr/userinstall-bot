@@ -1,0 +1,14 @@
+{
+  "name": "discord-button-bot",
+  "version": "1.0.0",
+  "description": "スラッシュコマンド対応の多機能Bot",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "register": "node register.js"
+  },
+  "dependencies": {
+    "discord.js": "^14.14.0",
+    "dotenv": "^16.4.5"
+  }
+}
